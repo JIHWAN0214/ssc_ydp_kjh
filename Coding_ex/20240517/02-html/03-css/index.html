@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>CSS 참조방식</title>
+
+    <!-- css 참조방식 3. 링크 방식 -->
+    <link rel="stylesheet" href="./index.css">
+
+    <!-- css 참조방식 2. 내장 방식(반드시 head 태그 안에서) -->
+    <style>
+
+        ul {
+            background-color: aqua;
+        }
+        /* 다른 태그에 같은 스타일 적용 */
+        h1, h2 {
+            color: pink;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- css 참조방식 1. 인라인 방식 -->
+    <h1 style="color: blue;" >CSS 사용법을 익혀봅시다!</h1>
+    <h2 style="font-size: larger;">Hello World</h2>
+
+    <ul>
+        <!-- Tip) emmit: 태그*횟수 = 해당 횟수만큼 태그생성-->
+        <li>원</li>
+        <li>투</li>
+        <li>쓰리</li>
+    </ul>
+</body>
+</html>
