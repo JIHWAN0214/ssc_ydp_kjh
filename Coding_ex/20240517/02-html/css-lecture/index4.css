@@ -1,0 +1,74 @@
+.div1 {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+/* 1. hover: 요소에 마우스를 올렸을때 
+    -  : hover 형태로 작성
+*/
+
+.div1:hover {
+    background-color: pink;
+    width: 150px;
+    height: 150px;
+}
+
+/* 2. : active - 요소를 마우스로 클릭 중일 때 */
+.div1:active {
+    background-color: brown;
+    width: 200px;
+}
+
+/* 3. : focus - 요소에 포커스가 되었을 때 */
+input:focus {
+    background-color: crimson;
+    color: lightblue;
+    outline-color: yellowgreen;
+
+}
+
+.links > a:hover {
+    background-color: coral;
+}
+
+.links > a:visited {
+    color: red;
+}
+
+/* 요소 상황에 따른 가상 클래스 선택자  */
+.zoo > * {
+    background-color: green;
+    color: white;
+}
+
+/* 
+    1. 요소 : first-child => 요소가 첫번째 요소라면
+*/
+.zoo > *:first-child {
+    background-color: red;
+}
+
+/* 
+    2. 요소 : last-child => 요소가 마지막 번째라면
+*/
+
+.zoo > *:last-child {
+    background-color: black;
+}
+
+/* 
+    3. 요소: nth-child(n) => 요소가 n번째라면
+ */
+
+ .zoo > *:nth-child(2) {
+    background-color: aqua;
+ }
+
+ /* 
+    4. 요소: not(xyz) => xyz가 아닌 요소만 선택
+ */
+
+ .zoo > *:not(div) {
+    background-color: pink;
+ }

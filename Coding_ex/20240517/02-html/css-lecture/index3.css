@@ -1,0 +1,42 @@
+/* 1. 하위(후손) 선택자 : 공백(띄어쓰기)로 구분 */
+body section {
+    /* border(테두리): 두께, 선 스타일, 선 색상 */
+    border: 1px solid blue;
+}
+
+body section h2 {
+    border: 1px solid green;
+}
+
+/* 2. 자식 선택자: '>' 해당 부등호 기호로 구분(방향고정) */
+.first > h2 {
+    color: white;
+    background-color: navy;
+}
+
+.second > h2 {
+    color: navy;
+    background-color: white;
+}
+
+/* 3. 인접 형제 선택자: '+' 기호로 구분
+    - 요소의 바로 뒤의 지정한 태그의 요소를 선택함
+    - 인접 형제 선택자의 형제 태그 지정시 주의
+*/
+#lion + li {
+    background-color: aqua;
+}
+
+/* 4. 일반 형제 선택자: '~' 기호로 구분 
+    - 인접 형제 선택자와 달리 지정한 요소에서부터 
+    - 그 다음에 있는 형제 태그들에 모두 적용
+*/
+#lion ~ li {
+    color: crimson;
+}
+
+/* CSS 색상 설정 */
+/*  1. 색상 키워드 사용 : red, blue, aqua etc..
+    2. 16진수 코드 사용 (#16진수코드)   
+    3. rgb( R: 0~255, G: 0~255. B:0~255) 요소 사용
+*/

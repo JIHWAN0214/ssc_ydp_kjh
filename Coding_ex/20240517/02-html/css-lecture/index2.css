@@ -1,0 +1,49 @@
+/* 1. 전체 선택자(*) */
+* {
+    color: crimson;
+}
+
+/* 2. 태그 선택자 : 태그명 */
+h1 {
+    background-color: pink;
+}
+
+p {
+    background-color: white;
+}
+
+/* 3. 클래스 선택자 : .클래스명 */
+.second  {
+    background-color: aqua;
+}
+
+.small {
+    font-size: 10px;
+}
+
+.big   {
+    font-size: 30px;
+}
+
+/* 4. id 선택자: #id명 */
+#first  {
+    background-color: lightgreen;
+}
+
+/* 
+    class, id 선택자의 차이
+    - class: 그룹 가능, 여러개 작성 가능
+    - id: 고유함, 하나만 가능
+*/
+
+.hello {
+    color: green;
+}
+
+.hi {
+    color: blue;
+}
+
+#my-hello {
+    color: black;
+}
