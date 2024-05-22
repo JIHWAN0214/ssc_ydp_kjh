@@ -1,0 +1,46 @@
+h3:hover{
+    color: yellow;
+    background-color: black;
+}
+
+form {
+    width: 400px;
+  }
+
+  /* focus */
+textarea {
+    width: 100%;
+  }
+
+ button {
+    float: right;
+    padding: 5px 15px;
+    background-color: #f96666;
+    color: white;
+    font-size: 17px;
+    border-radius: 10px;
+    border: none;
+  }
+
+textarea {
+    height: 150px;
+}
+textarea:focus{
+    background-color: gray;
+}
+
+input[type="checkbox"]:checked + label[for="red"]{
+    background-color: red;    
+}
+input[type="checkbox"]:checked + label[for="blue"]{
+    background-color: blue;
+    color: white;    
+}
+input[type="checkbox"]:checked + label[for="yellow"]{
+    background-color: yellow;    
+}
+
+button:active{
+    color: white;
+    background-color: blue;
+}

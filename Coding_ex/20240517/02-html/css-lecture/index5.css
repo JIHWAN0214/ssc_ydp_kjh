@@ -1,0 +1,23 @@
+/*  web font */
+/* 
+    1 구글 웹 폰트, 눈누 웹 폰트
+    2 모든 브라우저에서 보는 폰트를 통일시키기
+    3. 폰트를 다운받는게 아닌 link 태그에 걸려있는 주소에서
+    - 폰트를 가져오는 방식
+    4. 보통 기본적인 폰트는 body 태그에 작성
+*/
+h1 {
+
+    font-family: 'HSYeoleum20-Regular';
+    /* font-family: "Poetsen One", sans-serif; */
+    /* "Poetsen One"(사용할 글꼴), sans-serif(앞에 글꼴이 없을 시 이걸 적용) */
+    
+}
+
+div {
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+}
+
+
+
