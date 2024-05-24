@@ -1,0 +1,18 @@
+ .div1 {
+    height: 300px;
+    border-width: 15px 20px 30px 45px;
+    border-radius: 20px 5px 30px 40%;
+    border-color: antiquewhite aquamarine royalblue chartreuse;
+    border-style: ridge solid groove double;
+ }
+
+ .div2 {
+    height: 300px;
+    border-top : 5px  yellow;
+    border-bottom: 3px  royalblue;
+    border-right: 8px  rosybrown;
+    border-left: 10px  aqua;
+    border-radius: 10px 30px 2px 10px;
+    border-style: ridge dashed groove double;
+ }
+ 

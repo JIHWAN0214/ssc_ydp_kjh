@@ -1,0 +1,12 @@
+div {       
+    height: 400px;
+    width: 400px;
+    background-image: url("./image/sessac.jpg") ;
+    background-position: center;   
+    background-repeat: no-repeat;   
+    border-radius: 50%;
+    border: 10px solid white;
+    outline: 12px solid yellow;
+    background-size: 600px;
+    margin: 50px;
+}

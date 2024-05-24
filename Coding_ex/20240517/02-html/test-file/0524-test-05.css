@@ -1,0 +1,43 @@
+.background {
+    background-color: lightgray;
+    height: 600px;
+    position: relative;
+}
+
+.img1 {
+    background-image: url(./image/mountain.jpg);
+    width: 400px;
+    height: 200px;    
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: auto;
+    top: 200px;
+    left: 200px;
+    transform: skewY(30deg);
+    z-index: 3;
+}
+
+.img1:hover {
+    transform: skewY(0deg);
+    transition: 1s;
+
+}
+
+.img2 {
+    background-image: url(./image/sea.jpg);
+    width: 400px;
+    height: 200px;    
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: auto;
+    top: 200px;
+    left: 200px;
+    transform: skewY(30deg);
+    z-index: 2;
+}
+
+.img2:hover {
+    transform: skewY(0deg);
+    transition: 1s;
+    z-index: 4;
+}

@@ -1,0 +1,61 @@
+div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* 
+static : 기본값
+- 기본값이기 때문에 작성하지 않아도 적용됨
+- 인라인 요소 : 왼쪽에서 오른쪽으로 쌓임
+- 블록 요소 : 위에서 아래로 쌓임
+*/
+.position-static {
+    background-color: pink;
+    position: static;
+}
+
+/* 
+relative : 상대 위치
+- 일반적인 흐름에 따라 배치. top,bottom,left,right 중 하나 이상 작성
+- 원래 있어야 하는 위치를 기준으로 하여  top,bottom,left,right 씩 이동
+- 배치(위치)가 바뀌어도 원래 기존 자리가 유지된다.
+- 보통 부모요소로 많이 사용됨
+*/
+
+.position-relative {
+    background-color: skyblue;
+    position: relative;
+    left: 100px;
+}
+
+
+/* 
+absolute : 절대 위치
+- 누구를 기준? position 속성을 갖는 제일 가까운 조상을 기준으로 함
+- position 속성을 갖는 조상이 없다면? body를 기준삼음
+- 즉, 특정 요소를 기준 삼아서 top,bottom,left,right 씩 이동
+- 배치(위치)가 바뀌면 기존 자리 소멸
+
+*/
+.position-absolute  {
+    background-color: yellow;
+    position: absolute;
+}
+
+
+/* 
+fixed : 고정 위치
+- viewport(브라우저의 화면 전체)를 기준으로 특정 위치 배치
+- 스크롤 되어도 움직이지 않음
+- header, footer에 많이 사용됨
+
+*/
+.position-fixed {
+    background-color: blanchedalmond;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
