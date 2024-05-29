@@ -1,43 +1,43 @@
-.background {
-    background-color: lightgray;
+.container {
+    width: 1200px;
     height: 600px;
+    background-color: lightgray;
     position: relative;
 }
 
-.img1 {
-    background-image: url(./image/mountain.jpg);
-    width: 400px;
-    height: 200px;    
+img {
+    width: 300px;
+    height: 200px;
+}
+
+.place {
     position: absolute;
-    background-repeat: no-repeat;
-    background-size: auto;
-    top: 200px;
-    left: 200px;
     transform: skewY(30deg);
+    transition: 1s;
+    
+}
+
+.place:hover {
+    transform: skewY(0);
+}
+
+.sea {
+    top: 180px;
+    left: 200px;
     z-index: 3;
 }
-
-.img1:hover {
-    transform: skewY(0deg);
-    transition: 1s;
-
-}
-
-.img2 {
-    background-image: url(./image/sea.jpg);
-    width: 400px;
-    height: 200px;    
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: auto;
-    top: 200px;
-    left: 200px;
-    transform: skewY(30deg);
+.mountain {
+    top: 180px;
+    left: 350px;
     z-index: 2;
 }
-
-.img2:hover {
-    transform: skewY(0deg);
-    transition: 1s;
-    z-index: 4;
+.mountain:hover {
+    z-index: 3;
+}
+.waterfall {
+    top: 180px;
+    left: 500px;
+}
+.waterfall:hover {
+    z-index: 3;
 }
